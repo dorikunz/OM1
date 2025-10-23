@@ -2,7 +2,7 @@
 
 <p align="center">  <a href="https://arxiv.org/abs/2412.18588">Technical Paper</a> |  <a href="https://docs.openmind.org/">Documentation</a> |  <a href="https://x.com/openmind_agi">X</a> | <a href="https://discord.gg/VUjpg4ef5n">Discord</a> </p>
 
-**OpenMind's OM1 is a modular AI runtime that empowers developers to create and deploy multimodal AI agents across digital environments and physical robots**, including Humanoids, Phone Apps, websites, Quadrupeds, and educational robots such as TurtleBot 4. OM1 agents can process diverse inputs like web data, social media, camera feeds, and LIDAR, while enabling physical actions including motion, autonomous navigation, and natural conversations. The goal of OM1 is to make it easy to create highly capable human-focused robots, that are easy to upgrade and (re)configure to accommodate different physical form factors.
+**OpenMind's OM1 is a modular AI runtime that empowers developers to create and deploy multimodal AI agents across digital environments and physical robots**, including Humanoids, Phone Apps, websites, Quadrupeds, and educational robots such as TurtleBot 4. OM1 agents can process diverse inputs like web data, social media, camera feeds, and LiDAR, while enabling physical actions including motion, autonomous navigation, and natural conversations. The goal of OM1 is to make it easy to create highly capable human-focused robots that are easy to upgrade and (re)configure to accommodate different physical form factors.
 
 ## Capabilities of OM1
 
@@ -17,7 +17,7 @@
 
 ## Getting Started - Hello World
 
-To get started with OM1, let's run the Spot agent. Spot uses your webcam to capture and label objects. These text captions are then sent to `OpenAI 4o`, which returns `movement`, `speech` and `face` action commands. These commands are displayed on WebSim along with basic timing and other debugging information.
+To get started with OM1, let's run the Spot agent. Spot uses your webcam to capture and label objects. These text captions are then sent to `OpenAI 4o`, which returns `movement`, `speech`, and `face` action commands. These commands are displayed on WebSim along with basic timing and other debugging information.
 
 ### Package Management and VENV
 
@@ -34,7 +34,7 @@ uv venv
 
 ### Install Dependencies
 
-For MacOS  
+For macOS  
 ```bash
 brew install portaudio ffmpeg
 ```
@@ -77,7 +77,7 @@ elif output_interface.action == "shake paw":
 ...
 ```
 
-If your robot hardware does not yet provide a suitable HAL (hardware abstraction layer), traditional robotics approaches such as RL (reinforcement learning) in concert with suitable simulation environments (Unity, Gazebo), sensors (such as hand mounted ZED depth cameras), and custom VLAs will be needed for you to create one. It is further assumed that your HAL accepts motion trajectories, provides battery and thermal management/monitoring, and calibrates and tunes sensors such as IMUs, LIDARs, and magnetometers. 
+If your robot hardware does not yet provide a suitable HAL (hardware abstraction layer), traditional robotics approaches such as RL (reinforcement learning) in concert with suitable simulation environments (Unity, Gazebo), sensors (such as hand mounted ZED depth cameras), and custom VLAs will be needed for you to create one. It is further assumed that your HAL accepts motion trajectories, provides battery and thermal management/monitoring, and calibrates and tunes sensors such as IMUs, LiDARs, and magnetometers. 
 
 OM1 can interface with your HAL via USB, serial, ROS2, CycloneDDS, Zenoh, or websockets. For an example of an advanced humanoid HAL, please see [Unitree's C++ SDK](https://github.com/unitreerobotics/unitree_sdk2/blob/adee312b081c656ecd0bb4e936eed96325546296/example/g1/high_level/g1_loco_client_example.cpp#L159). Frequently, a HAL, especially ROS2 code, will be dockerized and can then interface with OM1 through DDS middleware or websockets.   
 
@@ -85,12 +85,12 @@ OM1 can interface with your HAL via USB, serial, ROS2, CycloneDDS, Zenoh, or web
 
 OM1 is developed on:
 
-* Jetson AGX Orin 64GB (running Ubuntu 22.04 and JetPack 6.1)
-* Mac Studio with Apple M2 Ultra with 48 GB unified memory (running MacOS Sequoia)
-* Mac Mini with Apple M4 Pro with 48 GB unified memory (running MacOS Sequoia)
+* Jetson AGX Orin 64 GB (running Ubuntu 22.04 and JetPack 6.1)
+* Mac Studio with Apple M2 Ultra with 48 GB unified memory (running macOS Sequoia)
+* Mac Mini with Apple M4 Pro with 48 GB unified memory (running macOS Sequoia)
 * Generic Linux machines (running Ubuntu 22.04)
 
-OM1 _should_ run on other platforms (such as Windows) and microcontrollers such as the Raspberry Pi 5 16GB.
+OM1 _should_ run on other platforms (such as Windows) and microcontrollers such as the Raspberry Pi 5 (16 GB).
 
 
 ## Full Autonomy Guidance
@@ -103,7 +103,7 @@ We're excited to introduce **full autonomy mode**, where three services work tog
 
 ## Intro to Backpack?
 From research to real-world autonomy, a platform that learns, moves, and builds with you.
-We'll shortly be releasing the **BOM** and details on **DIY** for the it. 
+We'll shortly be releasing the **BOM** and details on **DIY** for it. 
 Stay tuned!
 
 Clone the following repos -
